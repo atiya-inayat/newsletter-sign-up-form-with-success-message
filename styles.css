@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Bebas+Neue&family=Comfortaa&family=Dancing+Script&family=Great+Vibes&family=Kaushan+Script&family=Lobster&family=Manrope&family=Montserrat:wght@100&family=Nunito&family=Nunito+Sans:opsz@6..12&family=Oswald&family=Overpass&family=Poppins:ital,wght@0,700;1,400&family=Roboto&family=Tangerine&family=Tilt+Prism&display=swap");
+
+body {
+  margin: 0;
+  background-color: hsl(235, 18%, 26%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 900px;
+  height: 530px;
+  margin: 30px;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.main-heading {
+  font-weight: 800;
+  color: hsl(234, 29%, 20%);
+  font-family: roboto;
+}
+
+.intro-para {
+  color: hsl(234, 29%, 20%);
+  font-family: roboto;
+  font-weight: 400;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.icon-list {
+  padding-right: 15px;
+}
+
+.label {
+  color: hsl(234, 29%, 20%);
+  font-family: roboto;
+  font-weight: 400;
+  display: block;
+  margin-left: 7px;
+  margin-top: 25px;
+}
+
+input[type="email"] {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid hsl(231, 7%, 60%);
+  width: 300px;
+}
+input::placeholder {
+  color: hsl(231, 7%, 60%);
+}
+
+.subscribe-btn {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(4, 91%, 63%);
+  padding: 15px;
+  margin-left: 7px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  width: 310px;
+  font-family: roboto;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: hsl(4, 64%, 47%);
+}
+.subscribe-btn:active {
+  background-color: hsl(234, 29%, 20%);
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-image {
+  height: 480px;
+  border-radius: 0;
+}
+
+.mobile-image {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    /* width: 100%; */
+    height: 700px;
+  }
+  .detail-info {
+    width: 100%;
+    height: 500px;
+  }
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    width: 100%;
+    display: block;
+    height: 270px;
+    border-radius: 1rem;
+    margin: 0px;
+    /* overflow: hidden; */
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
